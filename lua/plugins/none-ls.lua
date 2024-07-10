@@ -52,6 +52,7 @@ return {
 				--     return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
 				--   end,
 				-- }),
+				vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {}),
 			},
 			-- configure format on save
 			on_attach = function(current_client, bufnr)
